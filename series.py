@@ -12,7 +12,7 @@ def fibonacci(n):
     '''Return nth value of Fibonacci sequence.'''
     a, b = 0, 1
     for i in range(n):
-        a, b = a+b, a
+        a, b = b, a+b
     return a
 
 
