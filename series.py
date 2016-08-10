@@ -27,6 +27,7 @@ def lucas(n):
 
 
 def demonstrate_series(f, inputs):
+    '''Demonstrate series function f using an iterable inputs.'''
     name = f.__name__
     print('  Returns the nth value in the {} series'
           .format(name.capitalize()))
@@ -38,6 +39,7 @@ def demonstrate_series(f, inputs):
 
 
 def demonstrate_sum_series():
+    '''Demonstrate the sum_series function.'''
     print('sum_series(n, a=0, b=1):')
     print('  Returns the nth value of a fibonacci-like sequence',
           'with a and b as base cases.')
