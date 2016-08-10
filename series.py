@@ -39,8 +39,8 @@ def demonstrate_series(f, inputs):
 
 def demonstrate_sum_series():
     print('sum_series(n, a=0, b=1):')
-    print('''  Returns the nth value of a fibonacci-like sequence with
-    a and b as base cases.''')
+    print('  Returns the nth value of a fibonacci-like sequence',
+          'with a and b as base cases.')
     print('>>> sum_series(30)')
     print(sum_series(30))
     print('>>> sum_series(15, 2, 1)')
