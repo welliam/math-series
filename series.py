@@ -4,6 +4,7 @@ def fibonacci(n):
         a, b = a+b, a
     return a
 
+
 def lucas(n):
     if n == 0:
         return 2
