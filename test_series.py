@@ -31,3 +31,20 @@ def test_lucas(n, result):
     sequence."""
     from series import lucas
     assert lucas(n) == result
+
+
+@pytest.mark.parametrize('n, result', FIBS_TABLE)
+def test_sum_series(n, result):
+    """Test function `sum_series' outputs correct values for the
+    Fibonacci sequence (i.e., the case where optional parameters are
+    not supplied)."""
+    from series import sum_series
+    assert sum_series(n) == result
+
+
+@pytest.mark.parametrize('n, result', LUCAS_TABLE)
+def test_sum_series(n, result):
+    """Test function `sum_series' outputs correct values for the
+    Lucas sequence."""
+    from series import sum_series
+    assert sum_series(n, 2, 1) == result
