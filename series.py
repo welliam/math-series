@@ -1,11 +1,9 @@
 def sum_series(n, a=0, b=1):
     '''Return nth value of Fibonacci-like series, with optional custom
     base cases.'''
-    if n == 0:
-        return a
-    for i in range(n-1):
+    for i in range(n):
         a, b = b, a+b
-    return b
+    return a
 
 
 def fibonacci(n):
